@@ -7,7 +7,6 @@ import puppeteer from 'puppeteer';
 	const page = await browser.newPage();
 	const context = await browser.defaultBrowserContext()
 	  context.overridePermissions('https://webmobinfo.kredily.com', ['notifications', 'camera', 'geolocation'])
-	// context.overridePermissions('https://getnada003.kredily.com/', ['notifications', 'camera', 'geolocation'])
 	
 	await page.goto('https://app.kredily.com/login/');
 	// other actions...
