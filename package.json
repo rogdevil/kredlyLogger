@@ -1,0 +1,12 @@
+{
+  "name": "kredlyLogger",
+  "version": "1.0.0",
+  "description": "A script to login and logout of kredly",
+  "main": "index.js",
+  "author": "rogdevil",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^19.7.2"
+  }
+}
