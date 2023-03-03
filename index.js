@@ -9,12 +9,15 @@ import puppeteer from 'puppeteer';
 	  context.overridePermissions('https://webmobinfo.kredily.com', ['notifications', 'camera', 'geolocation'])
 	
 	await page.goto('https://app.kredily.com/login/');
+	console.log("Initiating session")
 	// other actions...
 	await page.waitForSelector('#signInFormEmailAddress')
 	await page.type('#signInFormEmailAddress', '');
 	await page.type('#signInFormPassword', '');
 	await page.click('#signinSubmitBtn')
 	await page.waitForNavigation();
+	console.log("Session captured successfully")
+	console.log("Hacking into matrix now....")
 	await page.setRequestInterception(true)
 	page.on('request', (request) => {
 		if (request.url().includes('https://getnada003.kredily.com')) {
