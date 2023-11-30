@@ -7,6 +7,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "puppeteer": "^19.7.2"
+    "puppeteer": "^19.7.3"
   }
 }
